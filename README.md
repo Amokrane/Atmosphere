@@ -1,5 +1,5 @@
 # Atmosphere
-A playground Android app to experiment with different architectures, idioms and libraries.
+A playground Android app to experiment with different architectures, idioms, testing strategies and libraries.
 
 # Architecture patterns
 TBC
