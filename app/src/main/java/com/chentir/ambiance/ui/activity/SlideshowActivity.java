@@ -1,4 +1,4 @@
-package com.chentir.ambiance.ui.activities;
+package com.chentir.ambiance.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

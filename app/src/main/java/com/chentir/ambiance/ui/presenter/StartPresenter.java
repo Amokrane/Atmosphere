@@ -1,4 +1,4 @@
-package com.chentir.ambiance.ui.presenters;
+package com.chentir.ambiance.ui.presenter;
 
 import com.chentir.ambiance.source.OnlineQuoteBank;
 import com.chentir.ambiance.source.QuoteBank;

@@ -1,7 +1,7 @@
-package com.chentir.ambiance.model;
+package com.chentir.ambiance.entity;
 
 /**
- * Data Model that represents a quote
+ * Data Entity that represents a quote
  * 
  * Created by achentir on 1/23/16.
  */

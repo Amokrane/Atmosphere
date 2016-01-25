@@ -1,6 +1,6 @@
 package com.chentir.ambiance.source;
 
-import com.chentir.ambiance.model.Quote;
+import com.chentir.ambiance.entity.Quote;
 
 import java.util.List;
 

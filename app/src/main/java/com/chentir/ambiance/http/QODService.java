@@ -1,6 +1,6 @@
 package com.chentir.ambiance.http;
 
-import com.chentir.ambiance.model.Quote;
+import com.chentir.ambiance.entity.Quote;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

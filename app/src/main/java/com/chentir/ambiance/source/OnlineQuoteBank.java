@@ -3,7 +3,7 @@ package com.chentir.ambiance.source;
 import android.util.Log;
 
 import com.chentir.ambiance.http.RestClient;
-import com.chentir.ambiance.model.Quote;
+import com.chentir.ambiance.entity.Quote;
 
 import java.util.ArrayList;
 import java.util.List;
