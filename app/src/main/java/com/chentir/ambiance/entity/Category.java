@@ -1,4 +1,4 @@
-package com.chentir.ambiance.source;
+package com.chentir.ambiance.entity;
 
 /**
  * Created by achentir on 1/23/16.
