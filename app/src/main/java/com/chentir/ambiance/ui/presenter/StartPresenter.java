@@ -20,7 +20,7 @@ public class StartPresenter {
         for (QuoteBank quoteBank : mQuoteBanks) {
             if (quoteBank instanceof OnlineQuoteBank) {
                 OnlineQuoteBank onlineQuoteBank = (OnlineQuoteBank) quoteBank;
-                onlineQuoteBank.fetch();
+                onlineQuoteBank.fetchAsync();
             }
         }
     }

@@ -3,9 +3,10 @@ package com.chentir.ambiance.source;
 import android.util.Log;
 
 import com.chentir.ambiance.http.RestClient;
-import com.chentir.ambiance.entity.Quote;
+import com.chentir.ambiance.model.QuoteModel;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import retrofit2.Call;
@@ -27,15 +28,15 @@ public class OnlineQuoteBank extends QuoteBank {
         mRestClient = restClient;
     }
 
-    public List<Quote> fetch() {
-        Call<Quote[]> quote = mRestClient.getQuote();
-        final List<Quote> quotes = new ArrayList<>();
+    public void fetchAsync() {
+        Call<QuoteModel[]> quoteCall = mRestClient.getQuoteCall();
+        final List<QuoteModel> quotes = new ArrayList<>();
 
-        quote.enqueue(new Callback<Quote[]>() {
+        quoteCall.enqueue(new Callback<QuoteModel[]>() {
             @Override
-            public void onResponse(Response<Quote[]> response) {
-                // quotes = Arrays.asList(response.body());
-                // To Be Continued
+            public void onResponse(Response<QuoteModel[]> response) {
+                quotes.addAll(Arrays.asList(response.body()));
+                // TODO: Write batch transaction
             }
 
             @Override
@@ -43,7 +44,5 @@ public class OnlineQuoteBank extends QuoteBank {
                 Log.e("", "Could not load the quotes from " + mName + ". Reason:" + t.getMessage());
             }
         });
-
-        return null;
     }
 }

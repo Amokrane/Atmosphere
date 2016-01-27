@@ -28,7 +28,7 @@ public class CategoryModel extends BaseModel {
     public List<QuoteModel> getQuoteModels() {
         if ((quoteModels == null) || quoteModels.isEmpty()) {
             quoteModels = SQLite.select().from(QuoteModel.class)
-                            .where(CategoryModel_Table.quoteModelForeignKeyContainer_id.eq(id)).queryList();
+                            .where(QuoteModel_Table.categoryModelForeignKeyContainer_id.eq(id)).queryList();
         }
 
         return quoteModels;

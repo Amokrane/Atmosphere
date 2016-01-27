@@ -1,6 +1,6 @@
 package com.chentir.ambiance.http;
 
-import com.chentir.ambiance.entity.Quote;
+import com.chentir.ambiance.model.QuoteModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -10,5 +10,5 @@ import retrofit2.http.GET;
  */
 public interface QODService {
     @GET("/wp-json/posts?filter[posts_per_page]=1")
-    Call<Quote[]> getQuote();
+    Call<QuoteModel[]> getQuote();
 }
