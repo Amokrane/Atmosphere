@@ -36,6 +36,7 @@ public class OnlineQuoteBank extends QuoteBank {
             @Override
             public void onResponse(Response<QuoteModel[]> response) {
                 quotes.addAll(Arrays.asList(response.body()));
+                response.raw().body().close();
                 // TODO: Write batch transaction
             }
 

@@ -2,6 +2,7 @@ package com.chentir.ambiance;
 
 import android.app.Application;
 
+import com.facebook.stetho.Stetho;
 import com.raizlabs.android.dbflow.config.FlowManager;
 
 /**
@@ -13,5 +14,6 @@ public class AmbianceApplication extends Application {
     public void onCreate() {
         super.onCreate();
         FlowManager.init(this);
+        Stetho.initializeWithDefaults(this);
     }
 }
